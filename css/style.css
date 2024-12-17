@@ -499,6 +499,63 @@ img {
   margin: 1rem 0;
 }
 
+/*social*/
+.social {
+  background: var(--dark-color);
+  color: #fff;
+  padding: 6rem 2rem;
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 0;
+}
+
+.social p {
+  margin-bottom: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.social a {
+  color: #fff;
+}
+
+.social a:hover {
+  color: var(--secondary-color);
+}
+
+.footer {
+  background: var(--dark-color);
+  color: #fff;
+  border-top: 1px solid #384653;
+  padding: .5rem 2rem;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+footer a {
+  color: white;
+}
+
+.footer a:hover {
+  color: var(--secondary-color);
+}
+
 @media(max-width: 1200px) {
   .hero-flex {
     gap: 2rem;
@@ -583,6 +640,28 @@ img {
 
   .takeaway-cards {
     grid-template-columns: 1fr;
+  }
+  .social {
+    font-size: 1.2rem;
+  }
+
+  .social-icons {
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    padding: .5rem 1rem;
+  }
+
+  .footer-flex {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem .5rem;
+  }
+
+  .footer-links {
+    gap: 3rem;
+    margin: 1rem 0;
   }
 }
 
